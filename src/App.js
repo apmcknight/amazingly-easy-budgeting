@@ -5,6 +5,7 @@ import Splash from './Components/Splash/Splash';
 import Home from './Components/Home/Home.js';
 import Profile from './Components/Profile/Profile';
 import BudgetItem from './Components/BudgetItem/BudgetItem.js';
+import NewItem from './Components/NewItem/NewItem';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" exact="true" component={Splash} />
         <Route path="/app" exact="true" component={Home}/>
         <Route path="/profile" exact="true" component={Profile}/>
+        <Route path="/new-item" exact="true" component={NewItem}/>
         <Route path="/budget-item" exact="true" component={BudgetItem}/>
 
          

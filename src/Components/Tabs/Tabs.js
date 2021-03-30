@@ -10,7 +10,7 @@ function Tabs() {
           <Icon className="Icn" color="muted" icon={HomeIcon} size={40} />
         </a>
 
-        <a href="/newItem">
+        <a href="/new-item">
           <Icon className="Icn" color="muted" icon={AddIcon} size={40} />
         </a>
 

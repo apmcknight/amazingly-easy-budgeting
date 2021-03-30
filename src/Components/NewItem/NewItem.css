@@ -1,0 +1,10 @@
+.NewItem > .Input{
+    padding: 8%;
+}
+
+.NewItem > .Container{
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    background: #d3d3;
+}

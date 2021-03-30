@@ -1,13 +1,13 @@
-import './Splash.css';
+import './Home.css';
 
-function Splash() {    
+function Home() {    
   return (
 
-    <div className="Splash">
-      
+    <div className="Home">
+      <h1>this is the home page!</h1>
 
     </div>
   );
 }
 
-export default Splash;
+export default Home;

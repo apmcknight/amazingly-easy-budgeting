@@ -1,13 +1,13 @@
-import './Splash.css';
+import './BudgetItem.css';
 
-function Splash() {    
+function BudgetItem() {    
   return (
 
-    <div className="Splash">
+    <div className="BudgetItem">
       
 
     </div>
   );
 }
 
-export default Splash;
+export default BudgetItem;

@@ -6,15 +6,17 @@ function Tabs() {
 
     <div className="Tabs">
       <div className="tabbar">
-        <a href="/">
+        <a href="/app">
           <Icon className="Icn" color="muted" icon={HomeIcon} size={40} />
         </a>
 
-        <a href="/">
+        <a href="/newItem">
           <Icon className="Icn" color="muted" icon={AddIcon} size={40} />
         </a>
 
-        <Avatar isSolid className="Icn" name="John Doe" size={40} />
+        <a href="/profile">
+          <Avatar isSolid className="Icn" name="John Doe" size={40} />
+        </a>
       </div>
 
     </div>

@@ -1,5 +1,5 @@
 import './NewItem.css';
-import { TextInput } from "evergreen-ui";
+import { CrossIcon, Button, TextInput } from "evergreen-ui";
 
 function NewItem() {    
   return (
@@ -7,14 +7,44 @@ function NewItem() {
     <div className="NewItem">
       <div className="Container">
         <h1>Add an Item</h1>
-      </div>
 
-      <div className="Input">
-            <TextInput
-        name="text-input-name"
-        placeholder="Text input placeholder..."
-      />
-    </div>
+        <a className="Close" href="/app">
+          <Button marginY={8} marginRight={12} iconBefore={CrossIcon} intent="danger">Cancel</Button>
+        </a>
+
+      </div>
+      <form>
+        <div className="Input">
+          <TextInput
+            width={325}
+            height={70}
+            name="text-input-name"
+            placeholder="Line Item Title"
+          />
+        </div>
+
+        <div className="Input">
+          <TextInput
+            width={325}
+            height={70}
+            name="text-input-name"
+            placeholder="$ Amount of Line Item"
+          />
+        </div>
+
+        <div className="Input">
+          <TextInput
+            width={325}
+            height={200}
+            name="text-input-name"
+            placeholder="Description"
+          />
+        </div>
+
+        <Button className="btn" appearance="primary">Add Item</Button>
+
+
+      </form>
     </div>
   );
 }

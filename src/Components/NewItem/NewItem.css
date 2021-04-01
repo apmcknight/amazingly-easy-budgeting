@@ -2,25 +2,25 @@
     height: 115vh;
 }
 
+.NewItem > .Container{
+    padding: 15%; 
+    background: #5cb980;
+    color: #10311c;
+    text-align: center;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
 .NewItem > form > .Input{
     padding: 8%;
 }
 
-.NewItem > .Container{
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    top: 0;
-    padding: 5% 10%;
-    margin-bottom: 8%;
-    width: 100%;
-    height: auto;
-    background: #e7e7e7;
-}
+
 
 .NewItem > .Container >.Close {
     position: absolute;
-    top: 35px;
-    right: 25px;
+    left: 5%;
+    top: 30px;
     text-decoration: none;
 }
 

@@ -9,7 +9,7 @@ function NewItem() {
         <h1>Add an Item</h1>
 
         <a className="Close" href="/app">
-          <Button marginY={8} marginRight={12} iconBefore={CrossIcon} intent="danger">Cancel</Button>
+          <Button iconBefore={CrossIcon} intent="danger">Cancel</Button>
         </a>
 
       </div>

@@ -1,3 +1,7 @@
+.Home{
+    height: 190vh;
+}
+
 .Home > .greeting{
     margin-top: 15%;
     margin-left: 10%;

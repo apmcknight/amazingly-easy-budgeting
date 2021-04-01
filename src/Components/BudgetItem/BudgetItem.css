@@ -1,0 +1,30 @@
+.BudgetItem > .Header{
+    padding: 10%; 
+    margin-bottom: 10%;
+    background: #5cb980;
+    color: #10311c;
+    text-align: center;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.BudgetItemDetails{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.BudgetItemDetails > .Item {
+    display: block;
+    margin-bottom: 9%;
+}
+
+.BudgetItemDetails > .Item > h3{
+    display: inline;
+    margin-right: 3%;
+}
+
+.BudgetItemDetails > .Item > p{ display: inline;}
+
+.BudgetItemDetails > .ActionButtons{
+    margin-top: 25%;
+}

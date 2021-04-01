@@ -5,10 +5,12 @@ function Profile() {
   return (
 
     <div className="Profile">
-      <h1>Hello, there!</h1>
-      <Avatar isSolid className="Icn" name="John Doe" size={40} />
-
-
+      <div className="HeaderContainer">
+        <a href="/profile">    
+              <Avatar className="avi" isSolid name="John Doe" size={50} />
+        </a>
+        <h1 className="Header">Profile &amp; Settings</h1>
+      </div>
     </div>
   );
 }

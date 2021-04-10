@@ -10,7 +10,7 @@ function Splash() {
   return (
       <div className="Splash">
         <img className="Logo" alt="Logo" src={Logo}></img>
-        <h1>Welcome to Amazingly Easy Budgeting!</h1>
+        <h1>Welcome to Adam's way of Budgeting!</h1>
         <a href="/login">
           <Button marginY={8} marginRight={12}>Sign In</Button>
         </a>

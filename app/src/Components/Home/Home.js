@@ -1,13 +1,17 @@
+import React from 'react';
 import './Home.css';
-import Greeting from "./GreetingHeader/GreetingHeader";
+import Greeting from "../GreetingHeader/GreetingHeader";
 import {Pane,Heading} from 'evergreen-ui';
 
-function Home() {    
+function Home() {   
+ 
   return (
 
     <div className="Home">
     <Greeting />
     
+
+
     <a href="/budget-item">
       <Pane
       elevation={2}

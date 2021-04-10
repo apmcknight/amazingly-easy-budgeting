@@ -1,5 +1,4 @@
 import './App.css';
-import { Alert, Pane } from 'evergreen-ui';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Tabs from './Components/Tabs/Tabs';
 import Splash from './Components/Splash/Splash';

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Pane, Heading } from 'evergreen-ui';
+import './Card.css';
+import { Pane, Heading, Button, AddIcon } from 'evergreen-ui';
 
 export default function Card({ budgetItem }) {
     return (
@@ -23,6 +24,16 @@ export default function Card({ budgetItem }) {
                  </Pane>
              </a>
             ))}
+            
+            <div className="noItems">
+                <h1>There are no items here</h1>
+
+                <a className="button" href="new">
+                    <Button marginRight={16} iconAfter={AddIcon}>Add an Item</Button>
+                </a>
+                
+            </div>
+            
         </div>
     );
 }

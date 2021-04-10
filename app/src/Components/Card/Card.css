@@ -1,0 +1,8 @@
+.Crd{
+    height: 190vh;
+}
+
+.Card > .greeting{
+    margin-top: 15%;
+    margin-left: 10%;
+}

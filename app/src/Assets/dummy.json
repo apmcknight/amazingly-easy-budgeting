@@ -1,38 +1,29 @@
 [
     {
         "id": 0,
-        "item-name": null,
-        "item-description": null,
-        "item-transaction-method": null,
-        "item-amount": null,
-        "item-tag": ["one", "two", "three"],
-        "autopay": false
+        "name": "Spectrum",
+        "description": "Cable and Internet Bill",
+        "transactionMethod": "Amex",
+        "amount": 130.21,
+        "tag": ["tv", "internet", "spectrum"],
+        "autopay": true
     },
     {
         "id": 1,
-        "item-name": "Spectrum",
-        "item-description": "Cable and Internet Bill",
-        "item-transaction-method": "Amex",
-        "item-amount": 130.21,
-        "item-tag": ["tv", "internet", "spectrum"],
+        "name": "Spectrum",
+        "description": "Cable and Internet Bill",
+        "transactionMethod": "Amex",
+        "amount": 130.21,
+        "tag": ["tv", "internet", "spectrum"],
         "autopay": true
     },
     {
         "id": 2,
-        "item-name": "Verizon",
-        "item-description": "Phone Bill",
-        "item-transaction-method": "Amex",
-        "item-amount": 200.11,
-        "item-tag": ["phone", "mobile", "verizon"],
+        "name": "Spectrum",
+        "description": "Cable and Internet Bill",
+        "transactionMethod": "Amex",
+        "amount": 130.21,
+        "tag": ["tv", "internet", "spectrum"],
         "autopay": true
-    },
-    {
-        "id": 3,
-        "item-name": "Gas",
-        "item-description": "Auto Gas",
-        "item-transaction-method": "Discover",
-        "item-amount": 81.00,
-        "item-tag": ["gas", "car", "autogas"],
-        "autopay": false
     }
 ]

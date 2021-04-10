@@ -8,6 +8,7 @@ import Profile from './Components/Profile/Profile';
 import BudgetItem from './Components/BudgetItem/BudgetItem.js';
 import NewItem from './Components/NewItem/NewItem';
 import OfflineAlert from './Components/Offline/OfflineAlert';
+import LearnHome from './Components/Learn/Learn';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/profile" exact={true} component={Profile}/>
         <Route path="/new-item" exact={true} component={NewItem}/>
         <Route path="/budget-item" exact={true} component={BudgetItem}/>
+        <Route path="/learn/" exact={true} component={LearnHome}/>
 
         
 

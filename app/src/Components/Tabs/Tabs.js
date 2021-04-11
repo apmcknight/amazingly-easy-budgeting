@@ -2,6 +2,9 @@ import './Tabs.css';
 import { Avatar, Icon, HomeIcon, AddIcon, } from 'evergreen-ui';
 
 function Tabs() {    
+
+  const name = "John Doe"
+
   return (
 
     <div className="Tabs">
@@ -15,7 +18,7 @@ function Tabs() {
         </a>
 
         <a href="/profile">
-          <Avatar isSolid className="Icn" name="John Doe" size={40} />
+          <Avatar isSolid className="Icn" name={name} size={40} />
         </a>
       </div>
 

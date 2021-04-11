@@ -9,14 +9,14 @@
 }
 
 .noItems{
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
 }
 
 .noItems > h1{
-    margin-top: 30%;
-    font-size: 1.5em;
+    margin-top: 25%;
+    font-size: 2em;
 }
 
 .button {

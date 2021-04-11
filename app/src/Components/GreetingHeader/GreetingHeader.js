@@ -1,15 +1,17 @@
 import './GreetingHeader.css';
-import { Avatar, Pill} from 'evergreen-ui';
+import { Avatar, Pill } from 'evergreen-ui';
 
 function Greeting() {
+    const name = "John Doe";
+
     return(
         <div className="Greeting">  
 
         <a href="/profile">    
-            <Avatar className="avi" isSolid name="John Doe" size={50} />
+            <Avatar className="avi" isSolid name={name} size={50} />
         </a>
         
-        <h1 className="Header">Hello, John Doe!</h1>
+        <h1 className="Header">Hello, {name}</h1>
         <Pill 
         color="yellow"
         display="inline-block" 
@@ -18,7 +20,7 @@ function Greeting() {
         padding={7} 
         margin={7}
         >
-            You have $5,000 un-budgeted.
+            You have $ un-budgeted.
         </Pill>
     
     </div>

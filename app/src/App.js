@@ -18,8 +18,9 @@ export default function App() {
 
         <OfflineAlert />
         
-        <Route path="/" exact={true} component={Splash} />
+        <Route path="/" exact={true} component={Home} />
         <Route path="/app" exact={true} component={Home}/>
+        <Route path="/tutorial" exact={true} component={Splash}/>
         <Route path="/profile" exact={true} component={Profile}/>
         <Route path="/new-item" exact={true} component={NewItem}/>
         <Route path="/budget-item" exact={true} component={BudgetItem}/>

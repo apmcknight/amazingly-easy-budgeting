@@ -1,43 +1,25 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import './NewItem.css';
 import { CrossIcon, Button, TextInput, Pane, Spinner } from "evergreen-ui";
 
-  class NewItem extends Component {
-    constructor(props) {
-      super(props);
-  
-    }
-  
-    componentWillMount() {
-  
-    }
-  
-    componentDidMount() {
-  
-    }
-  
-    componentWillReceiveProps(nextProps) {
-  
-    }
-  
-    shouldComponentUpdate(nextProps, nextState) {
-  
-    }
-  
-    componentWillUpdate(nextProps, nextState) {
-  
-    }
-  
-    componentDidUpdate(prevProps, prevState) {
-  
-    }
-  
-    componentWillUnmount() {
-  
-    }
-  
-    render() {  
+function NewItem() {
+
+      const [loading, setLoading] = useState(true);
+      const [budgetItem, setBudgetItem] = useState([]);
+
+    
+      useEffect(() => {
+        setLoading(false)
+        localStorage.setItem("budgetItem", JSON.stringify(budgetItem));
+      }, [budgetItem])
+
+      if (loading) return (
+        <Pane display="flex" alignItems="center" justifyContent="center" height={650}>
+          <Spinner style={{marginRight: "10px"}}/>
+          We're crunching the numbers...
+        </Pane>
+      )
+
       return (
   
         <div className="NewItem">
@@ -48,6 +30,13 @@ import { CrossIcon, Button, TextInput, Pane, Spinner } from "evergreen-ui";
               <Button iconBefore={CrossIcon} intent="danger">Cancel</Button>
             </a>
           </div>
+
+
+          <Button className="btn" appearance="primary" onClick={() => setBudgetItem(["test"])}>
+              Add Item
+          </Button>
+  
+
           <form>
             <div className="Input">
               <TextInput
@@ -75,19 +64,18 @@ import { CrossIcon, Button, TextInput, Pane, Spinner } from "evergreen-ui";
                 placeholder="Description"
               />
             </div>
-  
-            <Button className="btn" appearance="primary">Add Item</Button>
+
+              {/* <Button className="btn" appearance="primary" onClick={() => setBudgetItem("test item")}>
+                Add Item
+              </Button> */}
+
+              
   
   
           </form>
         </div>
       );
-    }
-    
-  }
+}
+   
   
-  NewItem.propTypes = {
-  
-  };
-
 export default NewItem;

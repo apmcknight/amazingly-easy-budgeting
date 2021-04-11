@@ -1,8 +1,10 @@
+import React from 'react';
 import './GreetingHeader.css';
 import { Avatar, Pill } from 'evergreen-ui';
 
-function Greeting() {
-    const name = "John Doe";
+export default function Greeting() {
+
+    const name = JSON.parse(localStorage.getItem("name"))
 
     return(
         <div className="Greeting">  
@@ -26,5 +28,3 @@ function Greeting() {
     </div>
     );
 }
-
-export default Greeting;

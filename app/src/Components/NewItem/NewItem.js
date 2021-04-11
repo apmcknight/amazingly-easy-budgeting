@@ -31,14 +31,9 @@ function NewItem() {
             </a>
           </div>
 
-
-          <Button className="btn" appearance="primary" onClick={() => setBudgetItem(["test"])}>
-              Add Item
-          </Button>
+         
   
-
-          <form>
-            <div className="Input">
+            <div id="Title" className="Input">
               <TextInput
                 width={325}
                 height={70}
@@ -65,15 +60,12 @@ function NewItem() {
               />
             </div>
 
-              {/* <Button className="btn" appearance="primary" onClick={() => setBudgetItem("test item")}>
-                Add Item
-              </Button> */}
+            {/* what needs to be passed into the setBudgetItem function to allow for the form to update the budgetItems? */}
+            <Button className="btn" appearance="primary" onClick={() => setBudgetItem(["test"])}>
+              Add Item
+            </Button>
 
-              
-  
-  
-          </form>
-        </div>
+            </div>
       );
 }
    

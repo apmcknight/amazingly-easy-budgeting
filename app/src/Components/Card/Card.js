@@ -3,14 +3,14 @@ import './Card.css';
 import { Pane, Heading, Button, AddIcon } from 'evergreen-ui';
 
 
-export default function Card() {
+export default function Card({budgetItem}) {
 
-    const budgetItem = JSON.parse(localStorage.getItem("budgetItem") || "[]" )
+    // const listItem = JSON.parse(localStorage.getItem("budgetItem") || "[]")
 
     return (
         <div>
-            {budgetItem.map(budgetItem => (
-                 <a key={budgetItem.id} href="/budget-item">
+            {budgetItem.map(item => (
+                 <a key={item.id} href="/budget-item">
                  <Pane
                  elevation={2}
                  float="left"
@@ -23,8 +23,8 @@ export default function Card() {
                  alignItems="flex-start"
                  flexDirection="column"
                  >
-                     <Heading size={800}>${budgetItem.amount}</Heading>
-                     <Heading style={{marginTop: "10px"}} size={500}>{budgetItem.name}</Heading>
+                     <Heading size={800}>${item.amount}</Heading>
+                     <Heading style={{marginTop: "10px"}} size={500}>{item.name}</Heading>
                  </Pane>
              </a>
             ))}
@@ -35,7 +35,6 @@ export default function Card() {
                 <a className="button" href="new-item">
                     <Button marginRight={16} iconAfter={AddIcon}>Add an Item</Button>
                 </a>
-                
             </div>
             
         </div>

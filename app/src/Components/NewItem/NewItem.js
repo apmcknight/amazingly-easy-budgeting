@@ -1,72 +1,70 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './NewItem.css';
-import { CrossIcon, Button, TextInput, Pane, Spinner } from "evergreen-ui";
+import { TextInput, Button, Checkbox } from 'evergreen-ui';
+import Greeting from '../GreetingHeader/GreetingHeader';
 
 function NewItem() {
 
-      const [loading, setLoading] = useState(true);
-      const [budgetItem, setBudgetItem] = useState([]);
+  const [itemName, setItemName] = useState('');
+  const [amount, setAmount] = useState(0);
+  const [paymentMethod, setPaymentMethod] = useState('');
+  const [isChecked, setChecked] = useState({checked: false});  
+  const [onAutopay, setOnAutopay] = useState(false);
+ 
 
-    
-      useEffect(() => {
-        setLoading(false)
-        localStorage.setItem("budgetItem", JSON.stringify(budgetItem));
-      }, [budgetItem])
+  return (
+    <div className="NewItem">
+      <Greeting headerProps={"Add a New Item"}/>
 
-      if (loading) return (
-        <Pane display="flex" alignItems="center" justifyContent="center" height={650}>
-          <Spinner style={{marginRight: "10px"}}/>
-          We're crunching the numbers...
-        </Pane>
-      )
 
-      return (
-  
-        <div className="NewItem">
-          <div className="Container">
-            <h1>Add an Item</h1>
-  
-            <a className="Close" href="/app">
-              <Button iconBefore={CrossIcon} intent="danger">Cancel</Button>
-            </a>
-          </div>
+      <form action="">
+        <TextInput
+          type={"text"}
+          value={itemName}
+          margin={40}
+          height={40}
+          onChange={(e) => setItemName(e.target.value)}
+          name="text-input-name"
+          placeholder="Enter the Amount, Like $123"
+        />
 
-         
-  
-            <div id="Title" className="Input">
-              <TextInput
-                width={325}
-                height={70}
-                name="text-input-name"
-                placeholder="Line Item Title"
-              />
-            </div>
-  
-            <div className="Input">
-              <TextInput
-                width={325}
-                height={70}
-                name="text-input-name"
-                placeholder="$ Amount of Line Item"
-              />
-            </div>
-  
-            <div className="Input">
-              <TextInput
-                width={325}
-                height={200}
-                name="text-input-name"
-                placeholder="Description"
-              />
-            </div>
+       <TextInput
+          type={"text"}
+          value={amount}
+          margin={40}
+          height={40}
+          onChange={(e) => setAmount(e.target.value)}
+          name="text-input-name"
+          placeholder="Enter the Amount, Like $123"
+        />
 
-            {/* what needs to be passed into the setBudgetItem function to allow for the form to update the budgetItems? */}
-            <Button className="btn" appearance="primary" onClick={() => setBudgetItem(["test"])}>
-              Add Item
-            </Button>
+        <TextInput
+          type={"text"}
+          value={paymentMethod}
+          margin={40}
+          height={40}
+          onChange={(e) => setPaymentMethod(e.target.value)}
+          name="text-input-name"
+          placeholder="Payment Method (AMEX, Visa, Discover)"
+        />
 
-            </div>
-      );
+        <div>
+          <h3>Autopay?</h3>
+          <Checkbox 
+            value={onAutopay}
+            margin={40}  
+            checked={isChecked.checked}
+            onChange={e => { setOnAutopay(e.target.value); setChecked({checked: true})} }
+          />
+
+        </div>
+
+        <Button>
+          Add Item
+        </Button>
+      </form>
+    </div>
+  )
 }
    
   

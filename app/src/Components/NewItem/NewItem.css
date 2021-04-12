@@ -1,5 +1,6 @@
 .NewItem{
-    height: 130vh;
+    z-index: -3;
+    height: 200vh;
 }
 
 .NewItem > .Container{
@@ -11,8 +12,8 @@
     border-bottom-right-radius: 10%;
 }
 
-.NewItem > form > .Input{
-    padding: 8%;
+.NewItem > form{
+    z-index: -3;
 }
 
 

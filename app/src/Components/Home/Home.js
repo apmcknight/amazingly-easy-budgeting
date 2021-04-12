@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import Greeting from "../GreetingHeader/GreetingHeader";
-import Card from '../Card/Card';
 
 function Home() {   
   // DONT REMOVE UNTIL SOLVED.
@@ -19,11 +18,15 @@ function Home() {
   //     We're crunching the numbers...
   //   </Pane>
   // )
+
+
+ 
   
   return (
     <div className="Home">
-      <Greeting />
-      <Card />
+      <Greeting headerProps={"Hello, John Doe"}/>
+      
+      
     </div>
   );
 }
